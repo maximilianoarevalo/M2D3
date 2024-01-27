@@ -1,10 +1,11 @@
-function pintar(elementFromDOM){
-    elementFromDOM.style.backgroundColor = 'yellow';
+function pintar(elementFromDOM, color = 'yellow'){
+    elementFromDOM.style.backgroundColor = color;
 }
 
 const ele = document.getElementById("ele1");
 
 ele.addEventListener("click", function(){
-    pintar(ele);
+    let color;
+    pintar(ele, color);
 });
 
